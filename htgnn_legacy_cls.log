@@ -1,0 +1,26 @@
+Logging training output to: /data/spz/AHGA/htgnn_legacy_cls.log
+Model backend: legacy_pyg
+Task mode: anomaly_cls
+Architecture: SnapshotEncoder(HeteroConv/SAGE) + GRU
+Snapshots: 370, Sequences: 363
+Split -> train: 254, val: 54, split-test: 55
+Device: cuda
+Label distribution -> train attack=0 normal=254, val attack=0 normal=54
+[WARN] Train sequence labels are single-class. Use --decision_mode train_quantile (or auto) for anomaly-style thresholding.
+[WARN] No --test_data_dir is provided. For train-all-normal setups, evaluate with an external temporal test set containing attacks.
+Epoch 001 | train_loss 0.0298 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0010 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 002 | train_loss 0.0006 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0004 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 003 | train_loss 0.0003 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0002 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 004 | train_loss 0.0002 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0001 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 005 | train_loss 0.0001 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0001 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 006 | train_loss 0.0001 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0001 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 007 | train_loss 0.0001 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0001 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 008 | train_loss 0.0001 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0000 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 009 | train_loss 0.0000 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0000 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 010 | train_loss 0.0000 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0000 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Epoch 011 | train_loss 0.0000 train_f1 0.0000 train_auprc nan train_device_f1 0.0000 | val_loss 0.0000 val_f1 0.0000 val_auprc nan val_device_f1 0.0000 val_auc nan
+Early stopping at epoch 11 (patience=10)
+Saved best model to: /data/spz/AHGA/htgnn_legacy_cls.pt
+Test metrics (split-test):
+  loss=0.0000 | acc=1.0000 | precision=0.0000 | recall=0.0000 | f1=0.0000 | auc=nan | auprc=nan | device_f1=0.0000 | device_auc=nan
+Thresholded test metrics: decision_mode=auto | threshold=0.000022 | acc=0.9091 | precision=0.0000 | recall=0.0000 | f1=0.0000 | auc=nan | auprc=nan | tn=50 | fp=5 | fn=0 | tp=0

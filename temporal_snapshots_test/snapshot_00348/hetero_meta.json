@@ -1,0 +1,97 @@
+{
+  "node_types": {
+    "crp": 1,
+    "plc": 6,
+    "device": 51
+  },
+  "feature_columns": [
+    "feat_general_device_type_ait",
+    "feat_general_device_type_dpit",
+    "feat_general_device_type_fit",
+    "feat_general_device_type_lit",
+    "feat_general_device_type_mv",
+    "feat_general_device_type_p",
+    "feat_general_device_type_pit",
+    "feat_general_device_type_unknown",
+    "feat_general_device_type_uv",
+    "feat_general_process_p1",
+    "feat_general_process_p2",
+    "feat_general_process_p3",
+    "feat_general_process_p4",
+    "feat_general_process_p5",
+    "feat_general_process_p6",
+    "feat_general_process_punk",
+    "feat_general_sub_process_sp10",
+    "feat_general_sub_process_sp20",
+    "feat_general_sub_process_sp30",
+    "feat_general_sub_process_sp40",
+    "feat_general_sub_process_sp50",
+    "feat_general_sub_process_sp60",
+    "feat_general_sub_process_spunk",
+    "feat_control_plc1",
+    "feat_control_plc2",
+    "feat_control_plc3",
+    "feat_control_plc4",
+    "feat_control_plc5",
+    "feat_control_plc6",
+    "feat_measurement_periodicity_periodic",
+    "feat_measurement_periodicity_constant",
+    "feat_measurement_periodicity_non_periodic",
+    "feat_measurement_period_value",
+    "feat_measurement_period_max",
+    "feat_measurement_period_min",
+    "feat_measurement_period_entropy_mean",
+    "feat_measurement_period_entropy_var"
+  ],
+  "relations": [
+    {
+      "src_type": "crp",
+      "relation": "hierarchy",
+      "dst_type": "plc",
+      "edge_index_file": "edge_index__crp__hierarchy__plc.npy",
+      "edge_weight_file": "edge_weight__crp__hierarchy__plc.npy",
+      "num_edges": 6
+    },
+    {
+      "src_type": "plc",
+      "relation": "hierarchy",
+      "dst_type": "crp",
+      "edge_index_file": "edge_index__plc__hierarchy__crp.npy",
+      "edge_weight_file": "edge_weight__plc__hierarchy__crp.npy",
+      "num_edges": 6
+    },
+    {
+      "src_type": "plc",
+      "relation": "hierarchy",
+      "dst_type": "device",
+      "edge_index_file": "edge_index__plc__hierarchy__device.npy",
+      "edge_weight_file": "edge_weight__plc__hierarchy__device.npy",
+      "num_edges": 51
+    },
+    {
+      "src_type": "device",
+      "relation": "hierarchy",
+      "dst_type": "plc",
+      "edge_index_file": "edge_index__device__hierarchy__plc.npy",
+      "edge_weight_file": "edge_weight__device__hierarchy__plc.npy",
+      "num_edges": 51
+    },
+    {
+      "src_type": "device",
+      "relation": "physical",
+      "dst_type": "device",
+      "edge_index_file": "edge_index__device__physical__device.npy",
+      "edge_weight_file": "edge_weight__device__physical__device.npy",
+      "num_edges": 742
+    },
+    {
+      "src_type": "device",
+      "relation": "flow",
+      "dst_type": "device",
+      "edge_index_file": "edge_index__device__flow__device.npy",
+      "edge_weight_file": "edge_weight__device__flow__device.npy",
+      "num_edges": 100
+    }
+  ],
+  "format": "numpy_for_pyg_heterodata"
+}

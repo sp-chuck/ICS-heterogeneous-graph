@@ -1,0 +1,23 @@
+{
+  "snapshot_id": 169,
+  "row_start": 21632,
+  "row_end_exclusive": 21888,
+  "window_size": 256,
+  "snapshot_label": 0,
+  "num_attack_rows": 0,
+  "num_normal_rows": 256,
+  "num_flow_edges": 200,
+  "num_all_edges": 1056,
+  "num_device_nodes": 51,
+  "num_device_attack_labels": 0,
+  "device_attack_ratio": 0.0,
+  "flow_rule_stats": {
+    "adjacent_stage_fit": 11,
+    "same_stage_fit_lit": 3,
+    "adjacent_device_name": 56,
+    "periodic_similarity": 30,
+    "ait_excluded": 378
+  },
+  "recommended_model": "HTGNN",
+  "model_description": "Heterogeneous GNN encoder + GRU over snapshot sequence"
+}

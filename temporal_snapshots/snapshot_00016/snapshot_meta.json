@@ -1,0 +1,16 @@
+{
+  "snapshot_id": 16,
+  "row_start": 2048,
+  "row_end_exclusive": 2304,
+  "window_size": 256,
+  "snapshot_label": 0,
+  "num_attack_rows": 0,
+  "num_normal_rows": 256,
+  "num_flow_edges": 102,
+  "num_all_edges": 958,
+  "num_device_nodes": 51,
+  "num_device_attack_labels": 0,
+  "device_attack_ratio": 0.0,
+  "recommended_model": "HTGNN",
+  "model_description": "Heterogeneous GNN encoder + GRU over snapshot sequence"
+}

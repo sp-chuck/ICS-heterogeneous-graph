@@ -1,0 +1,13 @@
+src_global,dst_global,src_type,dst_type,edge_type,weight
+14,41,device,device,flow,-0.9855440349218768
+41,14,device,device,flow,-0.9855440349218768
+14,42,device,device,flow,-0.9980953883364145
+42,14,device,device,flow,-0.9980953883364145
+14,43,device,device,flow,0.9351997810650358
+43,14,device,device,flow,0.9351997810650358
+41,42,device,device,flow,0.9849946783900653
+42,41,device,device,flow,0.9849946783900653
+41,43,device,device,flow,-0.9208447988886463
+43,41,device,device,flow,-0.9208447988886463
+42,43,device,device,flow,-0.9368742472654865
+43,42,device,device,flow,-0.9368742472654865

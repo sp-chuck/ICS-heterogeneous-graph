@@ -1,0 +1,15 @@
+Logging training output to: /data/spz/AHGA/train_htgnn_run.log
+Traceback (most recent call last):
+  File "/data/spz/AHGA/train_htgnn.py", line 724, in <module>
+    main()
+  File "/data/spz/AHGA/train_htgnn.py", line 524, in main
+    snapshots, labels, metas, relation_list = load_snapshots(data_root)
+  File "/data/spz/AHGA/train_htgnn.py", line 188, in load_snapshots
+    dirs = sorted_snapshot_dirs(root)
+  File "/data/spz/AHGA/train_htgnn.py", line 126, in sorted_snapshot_dirs
+    dirs = [p for p in root.iterdir() if p.is_dir() and p.name.startswith("snapshot_")]
+  File "/data/spz/AHGA/train_htgnn.py", line 126, in <listcomp>
+    dirs = [p for p in root.iterdir() if p.is_dir() and p.name.startswith("snapshot_")]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/data/spz/AHGA/__not_exists__'

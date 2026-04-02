@@ -1,0 +1,56 @@
+Logging training output to: /data/spz/AHGA/htgnn_official_core_reg.log
+Model backend: official_htgnn_core
+Task mode: regression
+Architecture: Official-style RelationAgg + TemporalAgg core
+Snapshots: 370, Sequences: 363
+Split -> train: 254, val: 54, split-test: 55
+Device: cuda
+Label distribution -> train attack=0 normal=254, val attack=0 normal=54
+[WARN] Train sequence labels are single-class. Use --decision_mode train_quantile (or auto) for anomaly-style thresholding.
+[WARN] No --test_data_dir is provided. For train-all-normal setups, evaluate with an external temporal test set containing attacks.
+Epoch 001 | train_loss 0.0238 train_mae 0.0116 train_rmse 0.0205 | val_loss 0.0009 val_mae 0.0008 val_rmse 0.0008
+Epoch 002 | train_loss 0.0029 train_mae 0.0027 train_rmse 0.0035 | val_loss 0.0003 val_mae 0.0002 val_rmse 0.0002
+Epoch 003 | train_loss 0.0025 train_mae 0.0024 train_rmse 0.0030 | val_loss 0.0012 val_mae 0.0011 val_rmse 0.0011
+Epoch 004 | train_loss 0.0028 train_mae 0.0027 train_rmse 0.0045 | val_loss 0.0014 val_mae 0.0014 val_rmse 0.0014
+Epoch 005 | train_loss 0.0015 train_mae 0.0014 train_rmse 0.0019 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 006 | train_loss 0.0010 train_mae 0.0009 train_rmse 0.0012 | val_loss 0.0010 val_mae 0.0009 val_rmse 0.0009
+Epoch 007 | train_loss 0.0008 train_mae 0.0008 train_rmse 0.0011 | val_loss 0.0008 val_mae 0.0008 val_rmse 0.0008
+Epoch 008 | train_loss 0.0014 train_mae 0.0013 train_rmse 0.0019 | val_loss 0.0010 val_mae 0.0009 val_rmse 0.0009
+Epoch 009 | train_loss 0.0008 train_mae 0.0008 train_rmse 0.0010 | val_loss 0.0014 val_mae 0.0014 val_rmse 0.0014
+Epoch 010 | train_loss 0.0010 train_mae 0.0010 train_rmse 0.0012 | val_loss 0.0012 val_mae 0.0012 val_rmse 0.0012
+Epoch 011 | train_loss 0.0016 train_mae 0.0016 train_rmse 0.0025 | val_loss 0.0010 val_mae 0.0010 val_rmse 0.0010
+Epoch 012 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 013 | train_loss 0.0005 train_mae 0.0005 train_rmse 0.0006 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 014 | train_loss 0.0010 train_mae 0.0010 train_rmse 0.0015 | val_loss 0.0004 val_mae 0.0004 val_rmse 0.0004
+Epoch 015 | train_loss 0.0007 train_mae 0.0007 train_rmse 0.0010 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 016 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 017 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 018 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0004 | val_loss 0.0004 val_mae 0.0004 val_rmse 0.0004
+Epoch 019 | train_loss 0.0005 train_mae 0.0005 train_rmse 0.0006 | val_loss 0.0005 val_mae 0.0005 val_rmse 0.0005
+Epoch 020 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0001 val_mae 0.0001 val_rmse 0.0001
+Epoch 021 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 022 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0013 val_mae 0.0013 val_rmse 0.0013
+Epoch 023 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0001 val_mae 0.0001 val_rmse 0.0001
+Epoch 024 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 025 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0003 | val_loss 0.0004 val_mae 0.0004 val_rmse 0.0004
+Epoch 026 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 027 | train_loss 0.0002 train_mae 0.0002 train_rmse 0.0003 | val_loss 0.0008 val_mae 0.0008 val_rmse 0.0008
+Epoch 028 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 029 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0003 | val_loss 0.0009 val_mae 0.0009 val_rmse 0.0009
+Epoch 030 | train_loss 0.0005 train_mae 0.0005 train_rmse 0.0006 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 031 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0001 val_mae 0.0001 val_rmse 0.0001
+Epoch 032 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0003 | val_loss 0.0000 val_mae 0.0000 val_rmse 0.0000
+Epoch 033 | train_loss 0.0005 train_mae 0.0005 train_rmse 0.0006 | val_loss 0.0007 val_mae 0.0007 val_rmse 0.0007
+Epoch 034 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0004 val_mae 0.0004 val_rmse 0.0004
+Epoch 035 | train_loss 0.0002 train_mae 0.0002 train_rmse 0.0003 | val_loss 0.0003 val_mae 0.0002 val_rmse 0.0002
+Epoch 036 | train_loss 0.0002 train_mae 0.0002 train_rmse 0.0003 | val_loss 0.0001 val_mae 0.0001 val_rmse 0.0001
+Epoch 037 | train_loss 0.0004 train_mae 0.0004 train_rmse 0.0005 | val_loss 0.0008 val_mae 0.0008 val_rmse 0.0008
+Epoch 038 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0006 val_mae 0.0006 val_rmse 0.0006
+Epoch 039 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 040 | train_loss 0.0002 train_mae 0.0002 train_rmse 0.0003 | val_loss 0.0003 val_mae 0.0003 val_rmse 0.0003
+Epoch 041 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Epoch 042 | train_loss 0.0003 train_mae 0.0003 train_rmse 0.0004 | val_loss 0.0002 val_mae 0.0002 val_rmse 0.0002
+Early stopping at epoch 42 (patience=10)
+Saved best model to: /data/spz/AHGA/htgnn_official_core_reg.pt
+Test metrics (split-test):
+  loss=0.0002 | mae=0.0002 | mse=0.0000 | rmse=0.0002 | device_f1=0.0000 | device_auc=nan
